@@ -18,7 +18,7 @@ jobs:
         run: |
           git config --local user.email "553536246@qq.com"
           git config --local user.name "hsl"
-          git remote set-url origin https://hsl6476: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@github.com/${{ github.repository }}
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           git commit --allow-empty -m "a commit a day keeps your girlfriend away"
           git push
