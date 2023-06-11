@@ -32,5 +32,6 @@ jobs:
         run: |
           git config --local user.email "553536246@qq.com"
           git config --local user.name "hsl"
-          git commit --allow-empty -m "a commit a day keeps your girlfriend away"
+          git add .
+          git commit -m "a commit a day keeps your girlfriend away"
           git push
